@@ -1,13 +1,46 @@
-# Sample Hardhat Project
+# Zombie Factory – Smart Contract Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## Requirements
 
-Try running some of the following tasks:
+Make sure you have the following installed:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
+* [Node.js](https://nodejs.org/en/) (v18+ recommended)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Hardhat](https://hardhat.org/)
+* [Solidity](https://docs.soliditylang.org/)
+
+Install all required project dependencies:
+
+```bash
+npm install
+```
+
+If you don't have Hardhat globally installed:
+
+```bash
+npm install --save-dev hardhat
+```
+
+## Development Commands
+
+### Start a Local Hardhat Node
+
+```bash
 npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+```
+
+This runs a local Ethereum network for deploying and testing contracts.
+
+### Run Tests
+
+To run all tests:
+
+```bash
+npx hardhat test
+```
+
+To run a specific test file:
+
+```bash
+npx hardhat test test/<FileName>
 ```
